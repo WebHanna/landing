@@ -1,0 +1,101 @@
+.footer {
+  display: block;
+  height: 475px;
+  background: $background-color-pink;
+  color: $text-color-white;
+  font-size: $footer-text-font-size;
+  font-family: Droid Sans;
+  padding-top: 3px;
+  @media screen and (max-width: 1070px) {
+    height: auto;
+    padding-bottom: 60px;
+    font-size: $footer-text-media-font-size;
+  }
+  .wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    @media screen and (max-width: 1070px) {
+      padding-right: 50px;
+      padding-left: 50px;
+      max-width: 100%;
+    }
+    @media screen and (max-width: 550px) {
+      padding-right: 30px;
+      padding-left: 30px;
+      max-width: 100%;
+    }
+    .column {
+      .column_item {
+        padding-top: 46px;
+        display: inline-block;
+        float: left;
+        padding-right: 75px;
+        line-height: 10px;
+        letter-spacing: 0.3px;
+        @media screen and (max-width: 1070px) {
+           width: 12% ;
+           padding-right: 4%;
+        }
+        @media screen and (max-width: 790px) {
+          display: none;
+        }
+        .h1 {
+          font-family: DroidSans-Bold;
+        }
+        .p {
+          padding-top: 14px;
+          letter-spacing: 0.3px;
+        }
+          .p_address {
+            display: block;
+            padding-top: 38px;
+            padding-bottom: 14px;
+          }
+        .a{
+          color: white;
+        }
+        &:first-child {
+          font-family: MyriadPro-Regular;
+          padding-right: 188px;
+          padding-top: 33px;
+          @media screen and (max-width: 1070px) {
+            width: 16% ;
+            padding-right: 8%;
+          }
+          @media screen and (max-width: 790px) {
+            display: block;
+            font-size: $header-description-font-size;
+            width: 100%;
+            padding: 0;
+            padding-top: 30px;
+            text-align: center;
+          }
+        }
+        &:nth-child(5) {
+          padding-right: 90px;
+          @media screen and (max-width: 1070px) {
+            width: 12%;
+            padding-right: 4%;
+          }
+          @media screen and (max-width: 790px) {
+            display: none;
+          }
+        }
+        &:last-child {
+          font-family: Droid Sans;
+          padding-top: 45px;
+          padding-right: 0;
+          @media screen and (max-width: 1070px) {
+            width: 12%;
+            padding: 0;
+            padding-right: 0%;
+            padding-top: 45px;
+          }
+          @media screen and (max-width: 790px) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

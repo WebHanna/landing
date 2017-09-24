@@ -1,0 +1,169 @@
+.section_two {
+  display: block;
+  height: 462px;
+  background: $text-color-white;
+  color: $text-color-orange;
+  @media screen and (max-width: 1070px) {
+    width: 100%;
+    height: auto;
+  }
+  .wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-top: 37px;
+    @media screen and (max-width: 1070px) {
+      padding-right: 50px;
+      padding-left: 50px;
+      max-width: 100%;
+    }
+    @media screen and (max-width: 550px) {
+      padding-right: 30px;
+      padding-left: 30px;
+      max-width: 100%;
+    }
+    .block_left {
+      display: inline-block;
+      float: left;
+      max-width: 367px;
+      @media screen and (max-width: 1070px) {
+        width: 35%;
+      }
+      @media screen and (max-width: 790px) {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        padding-left: 5px;
+        margin: 0 auto;
+        float: none;
+      }
+      .blockquote {
+        font-family: Lato-Italic;
+        font-size: $second-section-blockquote-font-size;
+        max-width: 270px;
+        padding-right: 41px;
+        @media screen and (max-width: 1070px) {
+          width: 80%;
+        }
+        @media screen and (max-width: 790px) {
+          width: 100%;
+          max-width: 100%;
+          }
+        .quotes_top {
+          display: block;
+          font-size: 30px;
+          font-style: italic;
+        }
+        .quotes_bottom {
+         @extend .quotes_top;
+          padding-left: 70px;
+          @media screen and (max-width: 1070px) {
+            padding-left: 150px;
+            padding-top: 17px;
+          }
+          @media screen and (max-width: 1000px) {
+            padding-left: 105px;
+          }
+          @media screen and (max-width: 920px) {
+          padding-left: 182px;
+          }
+          @media screen and (max-width: 909px) {
+            padding-left: 100px;
+          }
+          @media screen and (max-width: 790px) {
+            padding-left: 595px;
+          }
+          @media screen and (max-width: 735px) {
+            padding-left: 140px;
+          }
+          @media screen and (max-width: 680px) {
+            padding-left: 180px;
+          }
+          @media screen and (max-width: 645px) {
+            padding-left: 350px;
+          }
+          @media screen and (max-width: 456px) {
+            padding-left: 250px;
+          }
+          @media screen and (max-width: 340px) {
+            padding-left: 180px;
+          }
+          @media screen and (max-width: 275px) {
+            padding-left: 140px;
+          }
+        }
+        .text{
+          padding-top: 5px;
+          line-height: 28px;
+          padding-left: 2px;
+        }
+      }
+      .row {
+        padding-top: 56px;
+        padding-right: 63px;
+        float: right;
+        color: #ffffff;
+        text-align: center;
+        font-size: 8px;
+        @media screen and (max-width: 1070px) {
+          padding-top: 15px;
+        }
+        @media screen and (max-width: 790px) {
+          padding-top: 15px;
+        }
+        &_left {
+          display: inline-block;
+          float: left;
+          height: 19px;
+          width: 30px;
+          background-color: $text-color-orange;
+          padding-top: 11px;
+        }
+        &_right {
+          @extend .row_left;
+          background-color: $background-color-orange_light;
+         }
+      }
+    }
+    .block_right {
+      display: inline-block;
+      float: left;
+      max-width: 648px;
+      margin-top: 40px;
+      border-left: 0.5px solid #efefef;
+      padding-bottom: 87px;
+      @media screen and (max-width: 1070px) {
+        width: 64%;
+        padding-bottom: 0;
+        margin-bottom: 66px;
+      }
+      @media screen and (max-width: 790px) {
+        display: block;
+        width: 100%;
+        border-left: 0;
+        border-top: 0.5px solid #efefef;
+        padding-top: 30px;
+      }
+      .h3 {
+        padding-left: 58px;
+        font-family: Lato-Regular;
+        font-size: $second-section-h3-font-size;
+        @media screen and (max-width: 790px) {
+          padding-left: 5px;
+        }
+      }
+      .p {
+        padding-left: 60px;
+        font-size: $header-description-font-size;
+        line-height: 28px;
+        color: $text-color-grey;
+        letter-spacing: 0.3px;
+        font-family: Lato-Regular;
+        padding-top: 20px;
+        @media screen and (max-width: 790px) {
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+}
+
