@@ -98,11 +98,10 @@
             width: 50px;
             height: 50px; } }
       .section_one .wrapper .header .menu_adaptive {
+        position: relative;
         display: none;
         height: 34px;
         width: 100%;
-        left: 50px;
-        right: 0px;
         color: white;
         float: right;
         text-align: right !important;
@@ -110,11 +109,7 @@
         font-size: 20px;
         padding-top: 12px;
         padding-left: 100px;
-        padding-right: 55px;
-        margin-right: 0px;
-        margin-left: 0px;
-        margin-top: 26px;
-        position: relative; }
+        margin-top: 26px; }
         @media screen and (max-width: 740px) {
           .section_one .wrapper .header .menu_adaptive {
             display: block; } }
@@ -125,10 +120,14 @@
           display: none;
           position: absolute;
           width: 100%;
-          left: 2px;
+          left: 50px;
           top: -25px;
           padding-left: 0px;
           background: linear-gradient(to bottom, #689eaa, #abcfcb, #fec88f, #ffe8b3); }
+          @media screen and (max-width: 550px) {
+            .section_one .wrapper .header .menu_adaptive_mobile {
+              left: 30px;
+              top: -23px; } }
           .section_one .wrapper .header .menu_adaptive_mobile_item {
             display: block;
             padding-top: 30px;
@@ -315,7 +314,8 @@
         @media screen and (max-width: 790px) {
           .section_two .wrapper .block_left .blockquote {
             width: 100%;
-            max-width: 100%; } }
+            max-width: 100%;
+            padding-right: 0; } }
         .section_two .wrapper .block_left .blockquote .quotes_top, .section_two .wrapper .block_left .blockquote .quotes_bottom {
           display: block;
           font-size: 30px;
